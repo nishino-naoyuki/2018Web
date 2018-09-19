@@ -1,0 +1,11 @@
+MySQLインストール 参考サイト
+
+https://www.dbonline.jp/mysql/install/
+
+http://proengineer.internous.co.jp/content/columnfeature/6529
+
+
+文字コードUTF-8
+Windowsの場合　my.ini 
+Macの場合　my.cnf
+
