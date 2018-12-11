@@ -1,7 +1,7 @@
-delete from teacher;
 delete from diary;
-delete from class;
 delete from student;
+delete from class;
+delete from teacher;
 delete from course;
 
 INSERT INTO course (course_code,course_name) VALUES('001','情報システム専攻科');
@@ -14,11 +14,11 @@ INSERT INTO class (class_code,course_code,grade,class_name,teacher_code) VALUES(
 INSERT INTO class (class_code,course_code,grade,class_name,teacher_code) VALUES('002','002',1,'B','001');
 INSERT INTO class (class_code,course_code,grade,class_name,teacher_code) VALUES('003','002',2,'A','002');
 
-INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000001',1,'江成利平','ena');
-INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000002',1,'下山守彦','shimo');
-INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000003',2,'堀井亨','hori');
-INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000004',2,'柳川莉歩','yana');
-INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000005',3,'竹内裕司','take');
+INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000001','001','江成利平','ena');
+INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000002','001','下山守彦','shimo');
+INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000003','002','堀井亨','hori');
+INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000004','002','柳川莉歩','yana');
+INSERT INTO student (student_id,class_code,student_name,student_password) VALUES('0000005','003','竹内裕司','take');
 
 INSERT INTO diary (class_code,insert_date,student_id,good_point,bad_point,student_comment,teacher_comment) VALUES('001','2018/11/1','0000001','<b>みんな集中していた</b>','<script>alert("aa");</script>','学生コメント１',null);
 INSERT INTO diary (class_code,insert_date,student_id,good_point,bad_point,student_comment,teacher_comment) VALUES('001','2018/11/3','0000002','<input type="text" >','竹内君が寝てた','学生コメント２',null);
