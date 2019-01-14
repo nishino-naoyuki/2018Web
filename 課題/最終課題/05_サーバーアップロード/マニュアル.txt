@@ -1,0 +1,17 @@
+・teratermを起動する
+・ホストに
+　「ec2-18-216-255-50.us-east-2.compute.amazonaws.com」
+　を入力し、OKする
+・ユーザー名に「ec2-user」を入力
+・RSA/DSA/ECDSA/ED25519鍵を使うを選択し「秘密鍵」をクリック
+・serverasoinstance.pemを選択してOKをクリック
+　→サーバに接続される
+
+＊＊＊ここから先はサーバーのコマンド＊＊＊
+・以下のコマンドを打ってMySQLを起動
+　mysql -u root -proot
+
+ →MySQLが起動する
+・sqlファイルのコマンドを使って
+　・データベースの作成
+　・テーブルの作成を行う
